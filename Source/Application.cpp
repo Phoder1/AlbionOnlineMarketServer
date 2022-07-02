@@ -9,14 +9,16 @@
 */
 
 #include "Application.h"
-#include "AlbionApiLib.h"
 
 namespace AT::AlbionServer
 {
+	Application::Application()
+	{
+		settings = ProjectSettings();
+	}
 	void Application::init()
 	{
-		auto newSettings = ProjectSettings::LoadSettings();
-		settings = newSettings;
+		settings = ProjectSettings::LoadSettings();
 
 		cout << "Successfully loaded settings:" << endl;
 		settings.logOut();
@@ -34,13 +36,9 @@ namespace AT::AlbionServer
 
 		cout << "update" << endl << endl;
 
-		auto items = AlbionApiLib::LoadItemData();
+		auto items = AlbionApiLib::LoadItemData(settings.getItemRequest());
 	}
 
-	Application::Application()
-	{
-		settings = ProjectSettings();
-	}
 	void Application::showCommands()
 	{
 

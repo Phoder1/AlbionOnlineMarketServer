@@ -28,5 +28,7 @@ namespace AT::AlbionServer
 		static json toJson(ProjectSettings& settings);
 		static ProjectSettings fromJson(json& json);
 		void logOut();
+
+		ItemRequest getItemRequest();
 	};
 }

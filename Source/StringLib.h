@@ -13,8 +13,8 @@
 
 namespace AT::AlbionServer::StringLib
 {
-	String join(String separator, vector<String> strgs);
-	String commaJoin(vector<String> strgs);
+	String join(const String& separator, const vector<String>& strgs);
+	String commaJoin(const vector<String>& strgs);
 	vector<String> cast(vector<int> numbers);
 	vector<string> toStd(vector<String> strings);
 	vector<String> fromStd(vector<string> strings);

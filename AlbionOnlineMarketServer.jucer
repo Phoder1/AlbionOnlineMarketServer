@@ -16,6 +16,8 @@
       <FILE id="KRTNs9" name="ItemRequest.cpp" compile="1" resource="0" file="Source/ItemRequest.cpp"/>
       <FILE id="DkzawV" name="ItemRequest.h" compile="0" resource="0" file="Source/ItemRequest.h"/>
       <FILE id="QAk0UV" name="json.hpp" compile="0" resource="0" file="Source/json.hpp"/>
+      <FILE id="Fswrfr" name="JsonConverters.h" compile="0" resource="0"
+            file="Source/JsonConverters.h"/>
       <FILE id="hg0iwp" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
       <FILE id="XKgefJ" name="Main.h" compile="0" resource="0" file="Source/Main.h"/>
       <FILE id="TEHAZl" name="ProjectSettings.cpp" compile="1" resource="0"

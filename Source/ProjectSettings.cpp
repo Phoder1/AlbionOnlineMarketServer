@@ -10,11 +10,11 @@
 
 #include "ProjectSettings.h"
 
+
 namespace AT::AlbionServer
 {
 	ProjectSettings::ProjectSettings()
 	{
-		itemRequest = ItemRequest();
 	}
 
 	ProjectSettings ProjectSettings::defaultValue()
@@ -58,16 +58,21 @@ namespace AT::AlbionServer
 	{
 		json settingsVar;
 
-		settingsVar["itemRequest"] = ItemRequest::toJson(settings.itemRequest);
+		settingsVar["itemRequest"] = settings.itemRequest.to_json();
 
 		return settingsVar;
+	}
+
+	ItemRequest ProjectSettings::getItemRequest()
+	{
+		return itemRequest;
 	}
 
 	ProjectSettings ProjectSettings::fromJson(json& json)
 	{
 		ProjectSettings settings;
 		auto requestJson = json.at("itemRequest");
-		settings.itemRequest = ItemRequest::fromJson(requestJson);
+		settings.itemRequest = ItemRequest::from_json(requestJson);
 		return  settings;
 	}
 

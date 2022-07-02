@@ -23,8 +23,6 @@ namespace  AT::AlbionServer
 		String buy_price_max_date;
 
 	public:
-		static void from_json(const var& j, ItemPrice& i);
-
 		void logOut() const;
 
 		const String& get_item_id() const { return item_id; }

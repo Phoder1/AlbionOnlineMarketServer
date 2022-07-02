@@ -2,6 +2,7 @@
 
 #include <JuceHeader.h>
 #include "json.hpp"
+#include "JsonConverters.h"
 
 namespace AT::AlbionServer
 {

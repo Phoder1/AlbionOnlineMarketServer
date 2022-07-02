@@ -12,9 +12,9 @@
 
 namespace AT::AlbionServer::StringLib
 {
-	String join(String separator, vector<String> strgs)
+	String join(const String& separator, const vector<String>& strgs)
 	{
-		String joinedStr;
+		String joinedStr = "";
 
 		for (size_t i = 0; i < strgs.size(); i++)
 		{
@@ -26,7 +26,7 @@ namespace AT::AlbionServer::StringLib
 		return  joinedStr;
 	}
 
-	String commaJoin(vector<String> strgs)
+	String commaJoin(const vector<String>& strgs)
 	{
 		return join(",", strgs);
 	}

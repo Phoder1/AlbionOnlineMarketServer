@@ -12,42 +12,6 @@
 
 namespace  AT::AlbionServer
 {
-	void ItemPrice::from_json(const var& var, ItemPrice& i)
-	{
-		auto tempValue = var.getProperty("item_id", NULL);
-		i.set_item_id(tempValue);
-
-		tempValue = var.getProperty("city", NULL);
-		i.set_city(tempValue);
-
-		tempValue = var.getProperty("quality", NULL);
-		i.set_quality(tempValue);
-
-		tempValue = var.getProperty("sell_price_min", NULL);
-		i.set_sell_price_min(tempValue);
-
-		tempValue = var.getProperty("sell_price_min_date", NULL);
-		i.set_sell_price_min_date(tempValue);
-
-		tempValue = var.getProperty("sell_price_max", NULL);
-		i.set_sell_price_max(tempValue);
-
-		tempValue = var.getProperty("sell_price_max_date", NULL);
-		i.set_sell_price_max_date(tempValue);
-
-		tempValue = var.getProperty("buy_price_min", NULL);
-		i.set_buy_price_min(tempValue);
-
-		tempValue = var.getProperty("buy_price_min_date", NULL);
-		i.set_buy_price_min_date(tempValue);
-
-		tempValue = var.getProperty("buy_price_max", NULL);
-		i.set_buy_price_max(tempValue);
-
-		tempValue = var.getProperty("buy_price_max_date", NULL);
-		i.set_buy_price_max_date(tempValue);
-	}
-
 	void ItemPrice::logOut() const
 	{
 		cout << "Item ID: " << item_id << endl
@@ -61,6 +25,5 @@ namespace  AT::AlbionServer
 			<< "Min Buy Price Date " << buy_price_min_date << endl
 			<< "Max Buy Price " << buy_price_max << endl
 			<< "Max Buy Price Date " << buy_price_max_date << endl;
-
 	}
 }

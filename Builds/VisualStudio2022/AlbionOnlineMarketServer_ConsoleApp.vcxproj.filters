@@ -585,6 +585,9 @@
     <ClInclude Include="..\..\Source\json.hpp">
       <Filter>AlbionOnlineMarketServer\Source</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\JsonConverters.h">
+      <Filter>AlbionOnlineMarketServer\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Main.h">
       <Filter>AlbionOnlineMarketServer\Source</Filter>
     </ClInclude>
