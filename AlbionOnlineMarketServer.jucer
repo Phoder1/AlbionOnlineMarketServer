@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="o74ftU" name="AlbionOnlineMarketServer" projectType="consoleapp"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              cppLanguageStandard="latest">
+  <MAINGROUP id="MDl2qP" name="AlbionOnlineMarketServer">
+    <GROUP id="{06B246C7-DE34-98BF-8183-FE7964EADB59}" name="Source">
+      <FILE id="HUBrfH" name="AlbionApiLib.cpp" compile="1" resource="0"
+            file="Source/AlbionApiLib.cpp"/>
+      <FILE id="gor3tb" name="AlbionApiLib.h" compile="0" resource="0" file="Source/AlbionApiLib.h"/>
+      <FILE id="OZtHjF" name="Application.cpp" compile="1" resource="0" file="Source/Application.cpp"/>
+      <FILE id="vzBrxI" name="Application.h" compile="0" resource="0" file="Source/Application.h"/>
+      <FILE id="KlpVgj" name="Common.h" compile="0" resource="0" file="Source/Common.h"/>
+      <FILE id="DPcETA" name="ItemPrice.cpp" compile="1" resource="0" file="Source/ItemPrice.cpp"/>
+      <FILE id="c4jjL6" name="ItemPrice.h" compile="0" resource="0" file="Source/ItemPrice.h"/>
+      <FILE id="KRTNs9" name="ItemRequest.cpp" compile="1" resource="0" file="Source/ItemRequest.cpp"/>
+      <FILE id="DkzawV" name="ItemRequest.h" compile="0" resource="0" file="Source/ItemRequest.h"/>
+      <FILE id="gp8O84" name="json.hpp" compile="0" resource="0" file="Source/json.hpp"/>
+      <FILE id="hg0iwp" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="XKgefJ" name="Main.h" compile="0" resource="0" file="Source/Main.h"/>
+      <FILE id="TEHAZl" name="ProjectSettings.cpp" compile="1" resource="0"
+            file="Source/ProjectSettings.cpp"/>
+      <FILE id="OGxRxw" name="ProjectSettings.h" compile="0" resource="0"
+            file="Source/ProjectSettings.h"/>
+      <FILE id="jmYCnk" name="StringLib.cpp" compile="1" resource="0" file="Source/StringLib.cpp"/>
+      <FILE id="lBxI3V" name="StringLib.h" compile="0" resource="0" file="Source/StringLib.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="AlbionOnlineMarketServer"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="AlbionOnlineMarketServer"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+  </MODULES>
+</JUCERPROJECT>
