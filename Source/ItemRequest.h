@@ -1,5 +1,7 @@
 #pragma once
 #include "Common.h"
+#include "StringLib.h"
+#include "AlbionApiLib.h"
 
 namespace AT::AlbionServer
 {

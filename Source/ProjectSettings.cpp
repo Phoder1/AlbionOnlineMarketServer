@@ -58,7 +58,7 @@ namespace AT::AlbionServer
 	{
 		json settingsVar;
 
-		//settingsVar["itemRequest"] = ItemRequest::toJson(settings.itemRequest);
+		settingsVar["itemRequest"] = ItemRequest::toJson(settings.itemRequest);
 
 		return settingsVar;
 	}

@@ -1,6 +1,4 @@
 #include "ItemRequest.h"
-#include "StringLib.h"
-#include "AlbionApiLib.h"
 
 namespace AT::AlbionServer
 {
@@ -55,7 +53,8 @@ namespace AT::AlbionServer
 	ItemRequest ItemRequest::fromJson(const json& var)
 	{
 		ItemRequest request;
-		auto tempValue = var["itemIds"];
+		
+		auto tempValue = var.at("itemIds").get<vector<string>>();
 
 		for (int i = 0; i < tempValue.size(); i++) {
 			json j_val(tempValue[i]);
