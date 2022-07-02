@@ -66,7 +66,8 @@ namespace AT::AlbionServer
 	ProjectSettings ProjectSettings::fromJson(json& json)
 	{
 		ProjectSettings settings;
-		settings.itemRequest = ItemRequest::fromJson(json);
+		auto requestJson = json.at("itemRequest");
+		settings.itemRequest = ItemRequest::fromJson(requestJson);
 		return  settings;
 	}
 

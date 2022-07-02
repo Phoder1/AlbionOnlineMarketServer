@@ -54,12 +54,17 @@ namespace AT::AlbionServer
 	{
 		ItemRequest request;
 		
-		auto tempValue = var.at("itemIds").get<vector<string>>();
+		auto itemIdsJson = var.at("itemIds");
+		auto itemIdsVector = itemIdsJson.get<vector<string>>();
+		request.itemIds = StringLib::fromStd(itemIdsVector);
 
-		for (int i = 0; i < tempValue.size(); i++) {
-			json j_val(tempValue[i]);
-			request.itemIds[i] = j_val;
-		}
+		auto citiesJson = var.at("cities");
+		auto citiesVector = citiesJson.get<vector<string>>();
+		request.cities = StringLib::fromStd(citiesVector);
+
+		auto qualitiesJson = var.at("qualities");
+		auto qualitiesVector = qualitiesJson.get<vector<int>>();
+		request.qualities = qualitiesVector;
 
 		return request;
 	}

@@ -47,4 +47,11 @@ namespace AT::AlbionServer::StringLib
 
 		return stdStrings;
 	}
+	vector<String> fromStd(vector<string> strings) {
+		auto stdStrings = vector<String>(strings.size());
+		for (size_t i = 0; i < strings.size(); i++)
+			stdStrings[i] = strings[i];
+
+		return stdStrings;
+	}
 }
