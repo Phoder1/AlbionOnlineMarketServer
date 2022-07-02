@@ -24,6 +24,7 @@
             file="Source/ProjectSettings.h"/>
       <FILE id="jmYCnk" name="StringLib.cpp" compile="1" resource="0" file="Source/StringLib.cpp"/>
       <FILE id="lBxI3V" name="StringLib.h" compile="0" resource="0" file="Source/StringLib.h"/>
+      <FILE id="aGzWuO" name="Todo.txt" compile="0" resource="1" file="Todo.txt"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>

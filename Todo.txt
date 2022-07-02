@@ -1,0 +1,6 @@
+/*
+TODO (Server):
+
+- Load items to track from a Json file
+- Store locally updated values
+- Priodically store to an SQL database the local changes
