@@ -26,7 +26,7 @@ namespace AT::AlbionServer::AlbionApiLib
 					ItemPrice price;
 					ItemPrice::from_json(item, price);
 
-					price.LogOut();
+					price.logOut();
 				}
 			}
 		}

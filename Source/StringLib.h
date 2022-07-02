@@ -14,4 +14,7 @@
 namespace AT::AlbionServer::StringLib
 {
 	String join(String separator, vector<String> strgs);
+	String commaJoin(vector<String> strgs);
+	vector<String> cast(vector<int> numbers);
+	vector<string> toStd(vector<String> strings);
 };

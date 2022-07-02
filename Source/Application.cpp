@@ -13,20 +13,36 @@
 
 namespace AT::AlbionServer
 {
-	void Application::Update()
+	void Application::init()
 	{
-		cout << "Update" << endl << endl;
+		auto newSettings = ProjectSettings::LoadSettings();
+		settings = newSettings;
+
+		settings.logOut();
+
+		while (true)
+		{
+			update();
+
+			sleep_for(seconds(updateInterval));
+		}
+	}
+
+	void Application::update()
+	{
+
+		cout << "update" << endl << endl;
 
 		auto items = AlbionApiLib::LoadItemData();
 	}
 
 	Application::Application()
 	{
-		while (true)
-		{
-			Update();
+		settings = ProjectSettings();
+	}
+	void Application::showCommands()
+	{
 
-			sleep_for(seconds(updateInterval));
-		}
+
 	}
 }

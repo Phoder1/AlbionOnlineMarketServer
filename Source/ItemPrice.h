@@ -25,7 +25,7 @@ namespace  AT::AlbionServer
 	public:
 		static void from_json(const var& j, ItemPrice& i);
 
-		void LogOut();
+		void logOut() const;
 
 		const String& get_item_id() const { return item_id; }
 		String& get_mutable_item_id() { return item_id; }

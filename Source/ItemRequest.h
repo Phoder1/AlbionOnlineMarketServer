@@ -11,6 +11,12 @@ namespace AT::AlbionServer
 		vector<String> cities;
 		vector<int> qualities;
 	public:
+		ItemRequest();
 		String getJsonUrl();
+
+		static ItemRequest defaultValue();
+		static ItemRequest fromJson(const json& var);
+		static json toJson(ItemRequest& i);
+		void logOut();
 	};
 }

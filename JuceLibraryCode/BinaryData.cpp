@@ -14,8 +14,7 @@ static const unsigned char temp_binary_data_0[] =
 "\r\n"
 "- Load items to track from a Json file\r\n"
 "- Store locally updated values\r\n"
-"- Priodically store to an SQL database the local changes\r\n"
-"\r\n";
+"- Priodically store to an SQL database the local changes";
 
 const char* Todo_txt = (const char*) temp_binary_data_0;
 
@@ -31,7 +30,7 @@ const char* getNamedResource (const char* resourceNameUTF8, int& numBytes)
 
     switch (hash)
     {
-        case 0xb6a42b17:  numBytes = 154; return Todo_txt;
+        case 0xb6a42b17:  numBytes = 150; return Todo_txt;
         default: break;
     }
 

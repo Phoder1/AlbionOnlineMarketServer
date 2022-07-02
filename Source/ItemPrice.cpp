@@ -48,7 +48,7 @@ namespace  AT::AlbionServer
 		i.set_buy_price_max_date(tempValue);
 	}
 
-	void ItemPrice::LogOut()
+	void ItemPrice::logOut() const
 	{
 		cout << "Item ID: " << item_id << endl
 			<< "City: " << city << endl

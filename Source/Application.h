@@ -1,5 +1,6 @@
 #pragma once
 #include "Common.h"
+#include "ProjectSettings.h"
 
 namespace AT::AlbionServer
 {
@@ -8,8 +9,12 @@ namespace AT::AlbionServer
 		const long updateInterval = 10;
 		double updatesPerSecond() const { return 1 / updateInterval; }
 
-		void Update();
+		ProjectSettings settings;
+
+		void update();
+		void showCommands();
 	public:
 		Application();
+		void init();
 	};
 };
