@@ -34,8 +34,10 @@ namespace AT::AlbionServer::StringLib
 	vector<String> cast(vector<int> numbers)
 	{
 		vector<String> strings;
-		for (int i = 0; i < numbers.size(); i ++)
-			strings[i] = to_string(numbers[i]);
+		for (int i = 0; i < numbers.size(); i++) {
+			auto numStr = to_string(numbers[i]);
+			strings.push_back(numStr);
+		}
 
 		return strings;
 	}

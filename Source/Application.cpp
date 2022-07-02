@@ -18,6 +18,7 @@ namespace AT::AlbionServer
 		auto newSettings = ProjectSettings::LoadSettings();
 		settings = newSettings;
 
+		cout << "Successfully loaded settings:" << endl;
 		settings.logOut();
 
 		while (true)
